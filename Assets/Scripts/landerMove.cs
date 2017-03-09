@@ -4,34 +4,32 @@ using UnityEngine;
 
 public class landerMove : MonoBehaviour {
 
-	GameObject lander;
-	Rigidbody landMove;
+    // This changes the force applied to the rocket on thrusting
+    [SerializeField]private float forceMult;
+    // This is the fuel modifier. Higher values = lower fuel usage.
+    [SerializeField]private float fuelMod;
 
-	float gravity;
-	float fuel;
+    public float fuel;
 
-	// Use this for initialization
+    // The lander's RigidBody
+	private Rigidbody landMove;
+    private float upforce;
+    
 	void Start () {
-		lander = GameObject.Find ("Cube");
-		landMove = GetComponent<Rigidbody> ();
-		gravity = -1.622f;	//in m/s^2
-		Physics.gravity = new Vector3(0f, gravity, 0f);
-		fuel = 1000;
+        landMove = GetComponent(typeof(Rigidbody)) as Rigidbody;
+        fuel = 1000;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		if(Input.GetKey(KeyCode.UpArrow)){
-			if (fuel > 0) {
-				landMove.AddForce (new Vector3 (0f, 1.5f, 0f));
-				fuel -= .1f;
-			}
-		}
-		if (Input.GetKey (KeyCode.LeftArrow)) {
-			lander.transform.Rotate (new Vector3 (0f, 0f, 1f));
-		}
-		if (Input.GetKey (KeyCode.RightArrow)) {
-			lander.transform.Rotate (new Vector3 (0f, 0f, -1f));
-		}
+    // We're using fixedupdate because we're using physics.
+	void FixedUpdate () {
+        if (fuel > 0.0f)
+        {
+            upforce = Input.GetAxis("Vertical");
+            upforce = Mathf.Max(0.0f, upforce);
+            fuel -= upforce / fuelMod;
+        }
+        // transform.up is the up vector of the object. We multiply it by force and the multiplier
+        landMove.AddForce (transform.up*upforce*forceMult);
+        transform.Rotate (new Vector3 (0f, 0f, Input.GetAxis("Horizontal")));
 	}
 }
