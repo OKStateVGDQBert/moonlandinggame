@@ -18,9 +18,13 @@ public class StartGame : MonoBehaviour {
        
 		
 	}
-    public void NewGame()
-    {
-        SceneManager.LoadScene(1);
+	public void NewGame()
+	{
+		SceneManager.LoadScene(1);
+	}
 
-    }
+	public void MainMenu()
+	{
+		SceneManager.LoadScene(0);
+	}
 }

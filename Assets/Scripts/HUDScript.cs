@@ -61,6 +61,6 @@ public class HUDScript : MonoBehaviour {
         vSpeedText.text = string.Format("Vertical Speed:           {00}", -vSpeed);
 
         //altitude = renderer.bounds.min.y - shuttle.position.y;
-        altText.text = string.Format("Altitude:                  {0000}", altitude);
+        altText.text = string.Format("Altitude:                  {00}", altitude);
     }
 }
