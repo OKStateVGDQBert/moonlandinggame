@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: bb07eb38e84e44e408b236680ea3dcf2
+timeCreated: 1489094923
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Component_5_ID148
+    100004: Component_6_ID148
+    100006: engine
+    100008: landing_gear2
+    100010: landing_gear2_ID38
+    100012: landing_gear2_ID44
+    100014: landing_gear_ID30
+    100016: landing_gear_ID63
+    100018: SketchUp
+    100020: SketchUp_ID398
+    100022: SketchUp_ID522
+    100024: SketchUp_ID535
+    100026: SketchUp_ID554
+    100028: Thruster_Pod
+    100030: Thruster_Pod_ID101
+    100032: Thruster_Pod_ID107
+    100034: Thruster_Pod_ID113
+    100036: Thruster_Pod_ID89
+    100038: Thruster_Pod_ID95
+    100040: Thruster_Pod_mount_ID119
+    100042: Thruster_Pod_mount_ID125
+    100044: Thruster_Pod_mount_ID131
+    100046: Thruster_Pod_mount_ID137
+    100048: tubing2_ID19
+    100050: tubing_ID9
+    400000: //RootNode
+    400002: Component_5_ID148
+    400004: Component_6_ID148
+    400006: engine
+    400008: landing_gear2
+    400010: landing_gear2_ID38
+    400012: landing_gear2_ID44
+    400014: landing_gear_ID30
+    400016: landing_gear_ID63
+    400018: SketchUp
+    400020: SketchUp_ID398
+    400022: SketchUp_ID522
+    400024: SketchUp_ID535
+    400026: SketchUp_ID554
+    400028: Thruster_Pod
+    400030: Thruster_Pod_ID101
+    400032: Thruster_Pod_ID107
+    400034: Thruster_Pod_ID113
+    400036: Thruster_Pod_ID89
+    400038: Thruster_Pod_ID95
+    400040: Thruster_Pod_mount_ID119
+    400042: Thruster_Pod_mount_ID125
+    400044: Thruster_Pod_mount_ID131
+    400046: Thruster_Pod_mount_ID137
+    400048: tubing2_ID19
+    400050: tubing_ID9
+    2300000: Component_5_ID148
+    2300002: Component_6_ID148
+    2300004: engine
+    2300006: landing_gear2
+    2300008: landing_gear2_ID38
+    2300010: landing_gear2_ID44
+    2300012: landing_gear_ID30
+    2300014: landing_gear_ID63
+    2300016: SketchUp
+    2300018: SketchUp_ID398
+    2300020: SketchUp_ID522
+    2300022: SketchUp_ID535
+    2300024: SketchUp_ID554
+    2300026: Thruster_Pod
+    2300028: Thruster_Pod_ID101
+    2300030: Thruster_Pod_ID107
+    2300032: Thruster_Pod_ID113
+    2300034: Thruster_Pod_ID89
+    2300036: Thruster_Pod_ID95
+    2300038: Thruster_Pod_mount_ID119
+    2300040: Thruster_Pod_mount_ID125
+    2300042: Thruster_Pod_mount_ID131
+    2300044: Thruster_Pod_mount_ID137
+    2300046: tubing2_ID19
+    2300048: tubing_ID9
+    3300000: Component_5_ID148
+    3300002: Component_6_ID148
+    3300004: engine
+    3300006: landing_gear2
+    3300008: landing_gear2_ID38
+    3300010: landing_gear2_ID44
+    3300012: landing_gear_ID30
+    3300014: landing_gear_ID63
+    3300016: SketchUp
+    3300018: SketchUp_ID398
+    3300020: SketchUp_ID522
+    3300022: SketchUp_ID535
+    3300024: SketchUp_ID554
+    3300026: Thruster_Pod
+    3300028: Thruster_Pod_ID101
+    3300030: Thruster_Pod_ID107
+    3300032: Thruster_Pod_ID113
+    3300034: Thruster_Pod_ID89
+    3300036: Thruster_Pod_ID95
+    3300038: Thruster_Pod_mount_ID119
+    3300040: Thruster_Pod_mount_ID125
+    3300042: Thruster_Pod_mount_ID131
+    3300044: Thruster_Pod_mount_ID137
+    3300046: tubing2_ID19
+    3300048: tubing_ID9
+    4300000: Component_5_ID148
+    4300002: Component_6_ID148
+    4300004: engine
+    4300006: landing_gear2
+    4300008: landing_gear2_ID38
+    4300010: landing_gear2_ID44
+    4300012: landing_gear_ID30
+    4300014: landing_gear_ID63
+    4300016: SketchUp
+    4300018: SketchUp_ID398
+    4300020: SketchUp_ID522
+    4300022: SketchUp_ID535
+    4300024: SketchUp_ID554
+    4300026: Thruster_Pod
+    4300028: Thruster_Pod_ID101
+    4300030: Thruster_Pod_ID107
+    4300032: Thruster_Pod_ID113
+    4300034: Thruster_Pod_ID89
+    4300036: Thruster_Pod_ID95
+    4300038: Thruster_Pod_mount_ID119
+    4300040: Thruster_Pod_mount_ID125
+    4300042: Thruster_Pod_mount_ID131
+    4300044: Thruster_Pod_mount_ID137
+    4300046: tubing2_ID19
+    4300048: tubing_ID9
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
