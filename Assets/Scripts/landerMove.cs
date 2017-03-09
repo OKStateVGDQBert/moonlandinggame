@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent (typeof(Rigidbody))]
 public class landerMove : MonoBehaviour {
 
     // This changes the force applied to the rocket on thrusting
@@ -17,6 +18,7 @@ public class landerMove : MonoBehaviour {
     
 	void Start () {
         landMove = GetComponent(typeof(Rigidbody)) as Rigidbody;
+        landMove.AddForce(Vector3.left*20000.0f);
         fuel = 1000;
 	}
 	
