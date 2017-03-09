@@ -13,8 +13,8 @@ public class HUDScript : MonoBehaviour {
     public int points = 0;
 
     //fuel stuff
-    public int fuel = 1000;
-    public Text fuelText;
+	public Text fuelText;
+	private landerMove landerMover;
 
     //velocity stuff
     public int hSpeed = 0; 
@@ -26,30 +26,32 @@ public class HUDScript : MonoBehaviour {
     public float altitude = 0;
     public Text altText;
 
-    //Test obj
+	//Test obj
+	public GameObject shuttle;
     private Rigidbody rb;
-    public Transform shuttle;
+	private Transform tran;
 
     // Use this for initialization
 	void Start () {
 
-        rb = GetComponent<Rigidbody>();
+		rb = shuttle.GetComponent(typeof(Rigidbody)) as Rigidbody;
+		tran = shuttle.GetComponent(typeof(Transform)) as Transform;
+		landerMover = shuttle.GetComponent (typeof(landerMove)) as landerMove;
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        timer ++;
-         int hours = 0;
-          int minutes = Mathf.FloorToInt(timer / 60f);
-          int seconds = Mathf.FloorToInt(timer - minutes * 60f);
-         timerText.text = string.Format("Time:    {0}:{0:00}:{1:00}", hours, minutes, seconds);
+		timer -= Time.deltaTime;
+	    int minutes = Mathf.FloorToInt(timer / 60f);
+		int seconds = Mathf.FloorToInt(timer - (minutes * 60f));
+        timerText.text = string.Format("Time:    {0:00}:{1:00}", minutes, seconds);
 
         // timerText.text = (timer / 60).ToString("00") + ":" + (timer % 60).ToString("00");
 
         //if shuttle crashes, lose fuel
 
-        fuelText.text = string.Format("Fuel:     {0000}", fuel);
+		fuelText.text = string.Format("Fuel:     {0000}", landerMover.fuel);
 
         //get horizontal velocity of shuttle
         hSpeed = Mathf.FloorToInt(rb.velocity.x);
